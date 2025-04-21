@@ -14,7 +14,7 @@ socket.socket = socks.socksocket
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # Telegram bot token and channel ID
-TOKEN = '8047907032:AAE9k0N9sU-axaUd3rue9nvLcehxh_xMMqg'
+TOKEN = '8047907032:AAFvVx2Dkhp55zsCbv8m0mDaAcWFnoHSPes'
 CHANNEL_ID = '-1002204038475'
 bot = telebot.TeleBot(TOKEN)
 
@@ -104,9 +104,9 @@ def bgmi_command(message):
     try:
         args = message.text.split()[1:]
         if len(args) != 3:
-            raise ValueError("┊★ȺŁØNɆ☂࿐ꔪ┊™ Dildos 💞 𝗕𝗢𝗧 𝗔𝗖𝗧𝗶𝗩𝗘 ✅ 
+            raise ValueError("""┊★ȺŁØNɆ☂࿐ꔪ┊™ Dildos 💞 𝗕𝗢𝗧 𝗔𝗖𝗧𝗶𝗩𝗘 ✅ 
 
- ⚙ /bgmi <ip> <port> <duration>")
+ ⚙ /bgmi <ip> <port> <duration>""")
 
         target_ip, target_port, user_duration = args
         MAX_DURATION = 180
